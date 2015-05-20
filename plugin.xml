@@ -11,6 +11,31 @@
 
     <!-- android -->
     <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <!--for android-->
+            <!--<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>-->
+            <!--<uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>-->
+            <!--<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />-->
+            <!--<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />-->
+
+
+            <!--for Samsung-->
+            <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+            <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+
+            <!--for htc-->
+            <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+            <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+
+            <!--for sony-->
+            <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+
+            <!--for apex-->
+            <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+
+            <!--for solid-->
+            <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+        </config-file>
         <source-file src="src/android/ShortcutBadgeException.java" target-dir="src/me/leolin/shortcutbadger/" />
         <source-file src="src/android/ShortcutBadger.java" target-dir="src/me/leolin/shortcutbadger/" />
         <source-file src="src/android/impl/AdwHomeBadger.java" target-dir="src/me/leolin/shortcutbadger/impl" />
