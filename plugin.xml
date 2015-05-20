@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-shortcug-badger"
+    version="0.0.1">
+    <name>ShortcutBadger</name>
+    <description>Cordova Shortcut Badger Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,shortcut,badger</keywords>
+
+    <!-- android -->
+    <platform name="android">
+        <source-file src="src/android/ShortcutBadgeException.java" target-dir="src/me/leolin/shortcutbadger/" />
+        <source-file src="src/android/ShortcutBadger.java" target-dir="src/me/leolin/shortcutbadger/" />
+        <source-file src="src/android/impl/AdwHomeBadger.java" target-dir="src/me/leolin/shortcutbadger/impl" />
+        <source-file src="src/android/impl/ApexHomeBadger.java" target-dir="src/me/leolin/shortcutbadger/impl" />
+        <source-file src="src/android/impl/AsusHomeLauncher.java" target-dir="src/me/leolin/shortcutbadger/impl" />
+        <source-file src="src/android/impl/DefaultBadger.java" target-dir="src/me/leolin/shortcutbadger/impl" />
+        <source-file src="src/android/impl/LGHomeBadger.java" target-dir="src/me/leolin/shortcutbadger/impl" />
+        <source-file src="src/android/impl/NewHtcHomeBadger.java" target-dir="src/me/leolin/shortcutbadger/impl" />
+        <source-file src="src/android/impl/NovaHomeBadger.java" target-dir="src/me/leolin/shortcutbadger/impl" />
+        <source-file src="src/android/impl/SamsungHomeBadger.java" target-dir="src/me/leolin/shortcutbadger/impl" />
+        <source-file src="src/android/impl/SolidHomeBadger.java" target-dir="src/me/leolin/shortcutbadger/impl" />
+        <source-file src="src/android/impl/SonyHomeBadger.java" target-dir="src/me/leolin/shortcutbadger/impl" />
+        <source-file src="src/android/impl/XiaomiHomeBadger.java" target-dir="src/me/leolin/shortcutbadger/impl" />
+        <source-file src="src/android/util/CloseHelper.java" target-dir="src/me/leolin/shortcutbadger/util" />
+    </platform>
+</plugin>
